@@ -1,10 +1,10 @@
 import "./App.css";
 import UserProfile from "./components/UserProfile";
-import type { UserType } from "./types/UserType";
+import type { User } from "./types/UserType";
 
-const userProfile:UserType = {
+const userProfile: User = {
   id: 1,
-  name: "Fahad",
+  name: "Fahad Bin Javed",
   contact: {
     email: "fahad@example.com",
     phone: "+92-300-1234567",
@@ -15,19 +15,19 @@ const userProfile:UserType = {
     },
   },
   education: {
-    highestLevel: "Intermediate",
-    institute: "Punjab College",
+    highestLevel: "Electrical Engineering",
+    institute: "UET Multan",
     year: 2020,
   },
   preferences: {
-    hobbies: ["Snooker", "Coding"],
+    hobbies: ["logic Building", "Coding"],
   },
 };
 
 function App() {
   return (
     <>
-      <UserProfile profile = {userProfile} />
+      <UserProfile profile={userProfile} />
     </>
   );
 }
