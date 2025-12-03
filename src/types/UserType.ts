@@ -1,4 +1,4 @@
-export type UserProfile = {
+export type UserType = {
   id: number;
   name: string;
   contact: {
@@ -17,6 +17,5 @@ export type UserProfile = {
   };
   preferences: {
     hobbies: string[];
-    theme: string;
   };
 };
